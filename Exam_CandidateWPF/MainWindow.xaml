@@ -1,0 +1,37 @@
+﻿<Window x:Class="Exam_CandidateWPF.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Exam_CandidateWPF"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="452.825" Width="525">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="226*"/>
+            <ColumnDefinition Width="291*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="46*"/>
+            <RowDefinition Height="48*"/>
+            <RowDefinition Height="43*"/>
+            <RowDefinition Height="54*"/>
+            <RowDefinition Height="62*"/>
+            <RowDefinition Height="169*"/>
+        </Grid.RowDefinitions>
+        <Label Content="Prüfung Anmeldung / Registrierung" HorizontalAlignment="Left" VerticalAlignment="Top" Width="517" Height="35" FontWeight="Bold" FontSize="18" Foreground="#FF0040B0" HorizontalContentAlignment="Center" Margin="0,3,0,0" Grid.ColumnSpan="2"/>
+        <Button Name ="BT_Login" Content="Login zur Prüfung" HorizontalAlignment="Left" Grid.Row="3" VerticalAlignment="Top" Width="194" Height="31" Background="#FFAEE0F7" FontWeight="Bold" Click="BT_Login_Click" Margin="97.208,20,0,0" Grid.Column="1"/>
+        <TextBox Name ="TB_UsernameDisplay" Visibility="Hidden" HorizontalAlignment="Left" Margin="41.208,0,0,12" Grid.Row="1" TextWrapping="Wrap" Text="" VerticalAlignment="Stretch" Width="149" HorizontalContentAlignment="Left" Background="#FF11BF21" Grid.Column="1"/>
+        <Label Name ="LB_Logged" Visibility="Hidden" Content="Logged als" HorizontalAlignment="Left" Margin="196,0,0,0" Grid.Row="1" VerticalAlignment="Top" Height="36" Width="71" Background="#FFF0EDED" FontWeight="Bold" Grid.ColumnSpan="2"/>
+        <Button Name ="BT_Logout" Visibility ="Hidden" Content="Logout" HorizontalAlignment="Left" Margin="195.208,0,0,0" Grid.Row="1" VerticalAlignment="Top" Width="96" Height="36" Background="#FFE62828" FontWeight="Bold" Click="BT_Logout_Click" Grid.Column="1"/>
+        <Button Content="Registrierung zur Prüfung" Name ="BT_Register" HorizontalAlignment="Left" Grid.Row="4" Width="194" FontWeight="Bold" Margin="97.208,2,0,33" Click="BT_Register_Click" Background="#FFAEE0F7" Grid.Column="1"/>
+        <Button Name ="BT_ExamCall"   IsEnabled="false" Content="Prüfung abrufen und ablegen" HorizontalAlignment="Left" Grid.Row="5" VerticalAlignment="Top" Width="190" Height="39"  Margin="127,0,0,0" Background="#FFAEE0F7" Click="BT_ExamCall_Click" Grid.ColumnSpan="2"/>
+        <Button Name ="BT_Result"  IsEnabled="false"  Content="Ergebisse Abrufen" HorizontalAlignment="Left" Margin="152.208,0,0,0" Grid.Row="5" VerticalAlignment="Top" Width="129" Height="39" Background="#FFAEE0F7" Grid.Column="1"/>
+        <TextBox x:Name ="TB_Username" HorizontalAlignment="Left" Height="33" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="349" FontWeight="Bold" Margin="168,35,0,0" Grid.Row="1" Grid.RowSpan="2" Grid.ColumnSpan="2"/>
+        <Label Content="Username:" HorizontalAlignment="Left" Grid.Row="1" VerticalAlignment="Top" Height="36" Width="108" Background="#FFE2E1E2" FontWeight="Bold" Margin="60,35,0,0" Grid.RowSpan="2"/>
+        <PasswordBox x:Name ="TB_Password" HorizontalAlignment="Left" Height="41"  VerticalAlignment="Top" Width="349" FontWeight="Bold" Margin="168,20,0,0" Grid.Row="2" Grid.RowSpan="2" Grid.ColumnSpan="2"/>
+        <Label Content="Passowrd:" HorizontalAlignment="Left" Grid.Row="2" VerticalAlignment="Top" Height="42" Width="108" Background="#FFDDDEDE" FontWeight="Bold" Margin="60,20,0,0" Grid.RowSpan="2"/>
+        <DataGrid Name ="DG_User" HorizontalAlignment="Left" Height="85" Margin="0,42,0,0" Grid.Row="5" VerticalAlignment="Top" Width="517" Grid.ColumnSpan="2"/>
+        <TextBox Name ="TB_Message" Visibility="Hidden" HorizontalAlignment="Left" Height="32" Margin="127,20,0,0" Grid.Row="4" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="390" Background="#FFE2CECC" Grid.ColumnSpan="2"/>
+    </Grid>
+</Window>

@@ -1,0 +1,58 @@
+﻿<Window x:Class="Exam_CandidateWPF.Views.Register"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Exam_CandidateWPF.Views"
+        mc:Ignorable="d"
+        Title="Register" Height="617.957" Width="503.537">
+    <Grid HorizontalAlignment="Center" VerticalAlignment="Center">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="151*"/>
+            <ColumnDefinition Width="345*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="28*"/>
+            <RowDefinition Height="30*"/>
+            <RowDefinition Height="33*"/>
+            <RowDefinition Height="33*"/>
+            <RowDefinition Height="30*"/>
+            <RowDefinition Height="28*"/>
+            <RowDefinition Height="30*"/>
+            <RowDefinition Height="32*"/>
+            <RowDefinition Height="32*"/>
+            <RowDefinition Height="0*"/>
+            <RowDefinition Height="0*"/>
+
+        </Grid.RowDefinitions>
+        <Label Content="Vorname:" HorizontalAlignment="Left" VerticalAlignment="Top" Height="28" Width="151" Background="#FFEAE2E2" FontWeight="Bold" Margin="0,-230,0,0"/>
+        <TextBox Name ="TB_Firstname" Grid.Column="1" HorizontalAlignment="Left" Height="28" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="345" Margin="0,-228,0,0"/>
+        <Label Content="Nachname:" HorizontalAlignment="Left" VerticalAlignment="Top" Height="28" Width="151" Background="#FFEAE2E2" FontWeight="Bold" Margin="0,-191,0,0"/>
+        <TextBox x:Name ="TB_Lastname" Grid.Column="1" HorizontalAlignment="Left" Height="28" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="345" Margin="0,-191,0,0"/>
+        <Label Content="Geburtsdatum:" HorizontalAlignment="Left" VerticalAlignment="Top" Height="33" Width="151" Background="#FFEAE2E2" FontWeight="Bold" Margin="0,-151,0,0"/>
+        <TextBox x:Name ="TB_Birthdate" Grid.Column="1" HorizontalAlignment="Left" Height="33" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="345" Margin="0,-151,0,0"/>
+        <Label Content="Email:" HorizontalAlignment="Left" VerticalAlignment="Top" Height="33" Width="151" Background="#FFEAE2E2" FontWeight="Bold" Margin="0,-105,0,0"/>
+        <TextBox x:Name ="TB_Email" Grid.Column="1" HorizontalAlignment="Left" Height="33" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="345" Margin="0,-107,0,0"/>
+        <Label Content="Voucher:" HorizontalAlignment="Left" VerticalAlignment="Top" Height="30" Width="151" Background="#FFEAE2E2" FontWeight="Bold" Margin="0,-67,0,0"/>
+        <TextBox x:Name ="TB_Voucher" Grid.Column="1" HorizontalAlignment="Left" Height="30" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="345" Margin="0,-67,0,0"/>
+        <Label Content="Straße:" HorizontalAlignment="Left" VerticalAlignment="Top" Height="30" Width="151" Background="#FFEAE2E2" FontWeight="Bold" Grid.Row="6"/>
+        <TextBox x:Name ="TB_Street" Grid.Column="1" HorizontalAlignment="Left" Height="30" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="345" Grid.Row="6"/>
+        <Label Content="Adresse" HorizontalAlignment="Left" Grid.Row="5" VerticalAlignment="Top" Height="28" Grid.ColumnSpan="2" Width="496" FontWeight="Bold" FontSize="16" Background="#FFB2ABAB"/>
+        <Label Content="Straßenummer:" HorizontalAlignment="Left" VerticalAlignment="Top" Height="30" Width="151" Background="#FFEAE2E2" FontWeight="Bold" Grid.Row="7"/>
+        <TextBox x:Name ="TB_Streetnummer" Grid.Column="1" HorizontalAlignment="Left" Height="30" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="345" Grid.Row="7"/>
+        <Label Content="PLZ:" HorizontalAlignment="Left" VerticalAlignment="Top" Height="34" Width="151" Background="#FFEAE2E2" FontWeight="Bold" Grid.Row="7" Margin="0,31,0,0" Grid.RowSpan="5"/>
+        <TextBox x:Name ="TB_PLZ" Grid.Column="1" HorizontalAlignment="Left" Height="34" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="345" Grid.Row="7" Margin="0,29,0,0" Grid.RowSpan="2"/>
+        <Button Name ="BT_register" Content="Registrieren" Grid.Column="1" HorizontalAlignment="Left" Margin="120,211,0,-236" VerticalAlignment="Top" Width="134" Height="25" Grid.Row="10" Click="BT_register_Click"/>
+        <Label Content="Password:" HorizontalAlignment="Left" VerticalAlignment="Top" Height="34" Width="151" Background="#FFEAE2E2" FontWeight="Bold" Grid.Row="10" Margin="0,103,0,-137"/>
+        <Label Content="Password wiederohlen:" HorizontalAlignment="Left" VerticalAlignment="Top" Height="34" Width="156" Background="#FFEAE2E2" FontWeight="Bold" Grid.Row="10" Margin="-5,137,0,-171"/>
+        <Label Content="Password" HorizontalAlignment="Left" Grid.Row="10" VerticalAlignment="Top" Height="32" Grid.ColumnSpan="2" Width="496" FontWeight="Bold" FontSize="16" Background="#FFB2ABAB" Margin="0,64,0,-96"/>
+        <PasswordBox Name ="TB_Password" Grid.Column="1" HorizontalAlignment="Left" Height="34" Margin="0,103,0,-137" Grid.Row="10" VerticalAlignment="Top" Width="345"/>
+        <PasswordBox Name ="TB_Passowrdwrd" Grid.Column="1" HorizontalAlignment="Left" Height="34" Margin="0,137,0,-171" Grid.Row="10" VerticalAlignment="Top" Width="345"/>
+        <TextBox Name ="TB_Message" Visibility="Hidden" Grid.ColumnSpan="2" HorizontalAlignment="Left" Height="29" Margin="-5,171,0,-200" Grid.Row="10" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="501" Background="#FFEE1010"/>
+        <Label Content="City:" HorizontalAlignment="Left" VerticalAlignment="Top" Height="34" Width="151" Background="#FFEAE2E2" FontWeight="Bold" Grid.Row="10" Margin="0,5,0,-39"/>
+        <TextBox x:Name ="TB_City" HorizontalAlignment="Left" Height="34" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="345" Grid.Row="10" Margin="0,3,0,-37" Grid.Column="1"/>
+        <Label Content="Prüfung  Registrierung" Visibility="Hidden" HorizontalAlignment="Left" VerticalAlignment="Top" Width="496" Height="53" FontWeight="Bold" FontSize="18" Foreground="#FF0040B0" HorizontalContentAlignment="Center" Grid.ColumnSpan="2" Margin="0,-288,0,0"/>
+        <Button Name ="BT_Close" IsEnabled="false" Content="Fenster zu" Grid.Column="1" HorizontalAlignment="Left" Height="25" Margin="270,211,0,-236" Grid.Row="10" VerticalAlignment="Top" Width="75" Click="BT_Close_Click"/>
+
+    </Grid>
+</Window>
